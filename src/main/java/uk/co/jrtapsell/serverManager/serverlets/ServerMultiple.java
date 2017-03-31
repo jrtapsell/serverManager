@@ -7,15 +7,11 @@ import java.net.UnknownHostException;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
-import javafx.scene.control.Tab;
-import javax.naming.Context;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import uk.co.jrtapsell.serverManager.HttpCode;
-import uk.co.jrtapsell.serverManager.Model;
-import uk.co.jrtapsell.serverManager.data.Key;
 import uk.co.jrtapsell.serverManager.data.Server;
 
 /**
