@@ -26,9 +26,15 @@ dependencies {
     compile group: 'javax', name: 'javaee-api', version: '7.0'
     // https://mvnrepository.com/artifact/javax.servlet/jstl
     compile group: 'javax.servlet', name: 'jstl', version: '1.2'
-
-
+    // https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner-parent
+    compile group: 'com.github.jsimone', name: 'webapp-runner', version: '8.5.11.3'
 }
 
-task stage(dependsOn: ['build', 'clean'])
+task deps(type: Copy) {
+    from configurations.compile
+    into 'runtime/'
+}
+
+task stage(dependsOn: ['deps', 'build', 'clean'])
 build.mustRunAfter clean
+deps.mustRunAfter build

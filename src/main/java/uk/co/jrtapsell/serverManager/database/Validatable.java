@@ -1,7 +1,5 @@
 package uk.co.jrtapsell.serverManager.database;
 
-import com.sun.media.sound.InvalidDataException;
-
 /**
  * @author James Tapsell
  */
