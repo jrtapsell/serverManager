@@ -1,0 +1,5 @@
+CREATE TABLE server (
+  id CHAR(36) PRIMARY KEY NOT NULL,
+  name VARCHAR,
+  ip VARCHAR
+)
